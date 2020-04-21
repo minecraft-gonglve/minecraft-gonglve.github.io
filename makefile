@@ -10,12 +10,9 @@ xml:
 	xmllint --noout sitemap.xml
 
 tidy:
-	tidy -utf8 -m index.html
-
-tohtml:
-	vim -c 'VimwikiAll2HTML' -c ':q'  wiki/index.wiki
+	tidy -utf8 -m *.html
 	
-gitadd: tohtml
+gitadd:
 	git add wiki/*.wiki *.html style.css makefile README.md sitemap.xml
 
 gitstatus: gitadd
