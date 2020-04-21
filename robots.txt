@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://minecraft-gonglve.com/sitemap.xml
+
