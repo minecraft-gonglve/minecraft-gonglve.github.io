@@ -8,12 +8,9 @@ touch:
 
 xml:
 	xmllint --noout sitemap.xml
-
-tidy:
-	tidy -utf8 -m *.html
 	
 gitadd:
-	git add wiki/*.wiki *.html style.css makefile README.md sitemap.xml
+	git add wiki/*.wiki templates/*.html *.html style.css makefile README.md sitemap.xml
 
 gitstatus: gitadd
 	git status
