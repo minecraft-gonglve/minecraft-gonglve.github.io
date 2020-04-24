@@ -10,7 +10,7 @@ xml:
 	xmllint --noout sitemap.xml
 	
 gitadd:
-	git add wiki/*.wiki templates/*.html *.html style.css makefile README.md sitemap.xml
+	git add text/*.wiki templates/*.html *.html css/*.css makefile README.md sitemap.xml
 
 gitstatus: gitadd
 	git status
